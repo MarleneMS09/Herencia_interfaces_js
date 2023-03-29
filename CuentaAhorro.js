@@ -1,11 +1,12 @@
-export class CuentaAhorro {
-    #cliente;
-    #saldo;
+import { Cuenta } from "./Cuenta.js";
 
-    constructor(cliente, numero, agencia, saldo){
-       this.numero = numero;
-       this.agencia = agencia; 
-       this.#cliente = cliente;
-       this.#saldo = saldo;
+export class CuentaAhorro extends Cuenta {
+    
+    constructor(cliente, numero, agencia, saldo) {
+        super(cliente,numero,agencia, saldo);
+    }
+
+    retirarDeCuenta(valor) {
+        super._retirarDeCuenta(valor,2);
     }
 }
