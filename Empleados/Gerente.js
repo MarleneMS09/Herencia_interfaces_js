@@ -1,7 +1,12 @@
-import { Empleado } from "./Empleado";
+import {Empleado} from './Empleado.js';
 
 export class Gerente extends Empleado {
-    constructor(nombre,dni) {
-       super(nombre,dni);
+    constructor(nombre,dni,salario) {
+        super(nombre,dni,salario);
+    }
+
+    verBonificion() {
+        const bono = 5;
+        return super._verBonificion(bono);
     }
 }
