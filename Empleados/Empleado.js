@@ -27,3 +27,5 @@ export class Empleado {
         return this.#salario + this.#salario*bono/100;
     }
 }
+
+//Este código es relacionado a usuario empleado
