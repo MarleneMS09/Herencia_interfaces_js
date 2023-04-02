@@ -10,4 +10,4 @@ export class Director extends Empleado {
         return super._verBonificion(bono);
     }
 }
-//Hace referencia a datos de Director
+//Hace referencia a datos de Director//
